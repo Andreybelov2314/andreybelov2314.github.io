@@ -1,0 +1,104 @@
+/* ===== СЕКЦИЯ ВЫСТУПАЮЩИХ ===== */
+.speakers-section {
+    padding: 40px 0 60px 0;
+    background: linear-gradient(135deg, #f8fcff, #ffffff);
+}
+
+/* ===== КАРТОЧКА МИНИМАЛИСТИЧНАЯ ===== */
+.speaker-card-minimal {
+    display: flex;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.03);
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+}
+
+.speaker-card-minimal:hover {
+    box-shadow: 0 15px 35px rgba(30, 135, 240, 0.12);
+    border-color: rgba(30, 135, 240, 0.25);
+    transform: translateY(-3px);
+}
+
+.speaker-card-minimal.last-card {
+    margin-bottom: 0;
+}
+
+/* Фото */
+.speaker-photo {
+    width: 200px;
+    min-width: 200px;
+    height: 240px;
+    overflow: hidden;
+    background: #f0f7ff;
+}
+
+.speaker-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.speaker-card-minimal:hover .speaker-photo img {
+    transform: scale(1.05);
+}
+
+/* Информация */
+.speaker-info {
+    padding: 25px 30px;
+    flex: 1;
+}
+
+.speaker-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b4a6f;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.speaker-position {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2c4960;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .speaker-card-minimal {
+        flex-direction: column;
+    }
+    
+    .speaker-photo {
+        width: 100%;
+        height: 260px;
+    }
+    
+    .speaker-info {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .speaker-photo {
+        height: 220px;
+    }
+    
+    .speaker-info {
+        padding: 20px;
+    }
+    
+    .speaker-name {
+        font-size: 20px;
+    }
+    
+    .speaker-position {
+        font-size: 14px;
+    }
+}

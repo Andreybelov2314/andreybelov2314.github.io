@@ -1,0 +1,198 @@
+/* ===== ПРОГРАММА КОНФЕРЕНЦИИ ===== */
+.program-section {
+    padding: 60px 0 80px 0;  /* Увеличил нижний отступ */
+    background: linear-gradient(135deg, #f8fcff, #ffffff);
+}
+
+.program-main-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0b4a6f;
+    margin-bottom: 50px;
+}
+
+/* ВАЖНО: центрирование колонки и сдвиг вправо */
+.uk-grid.uk-flex-center {
+    display: flex;
+    justify-content: center !important;
+}
+
+/* Колонка занимает 3/4 ширины и имеет правильные отступы */
+.uk-width-3-4\@m {
+    width: 75% !important;
+    margin-left: 0 !important;  /* Убрал левый отступ */
+}
+
+/* Стили для элементов программы */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 35px;  /* Увеличил отступ между карточками */
+    border-left: 3px solid #1e87f0;
+}
+
+/* ВАЖНО: отступ после последней карточки */
+.timeline-item.last-item {
+    margin-bottom: 0 !important;  /* Убираем нижний отступ у последней */
+}
+
+/* Добавляем отступ снизу контейнера */
+.uk-width-3-4\@m {
+    padding-bottom: 30px !important;  /* Отступ после всех карточек */
+}
+
+.timeline-time {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e87f0;
+    background: rgba(30, 135, 240, 0.1);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    border: 1px solid rgba(30, 135, 240, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 10px 30px rgba(30, 135, 240, 0.15);
+    border-color: rgba(30, 135, 240, 0.3);
+    transform: translateY(-2px);
+}
+
+.timeline-content.registration {
+    background: linear-gradient(135deg, #f0f7ff, #ffffff);
+}
+
+.timeline-content.opening {
+    background: linear-gradient(135deg, #fff9e6, #ffffff);
+    border-left: 4px solid #ffd700;
+}
+
+.timeline-content.report {
+    border-left: 4px solid #1e87f0;
+}
+
+.timeline-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0b4a6f;
+    margin: 0 0 10px 0;
+}
+
+.timeline-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e87f0;
+    margin: 15px 0 5px 0;
+}
+
+.timeline-speakers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-speakers li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eef2f6;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2c4960;
+}
+
+.timeline-speakers li:last-child {
+    border-bottom: none;
+}
+
+.timeline-position {
+    font-size: 15px;
+    color: #5d7a9a;
+    margin: 5px 0 10px 0;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.timeline-report-title {
+    font-size: 17px;
+    color: #0b4a6f;
+    padding: 12px 0 5px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Заголовок НАУЧНАЯ ПРОГРАММА */
+.program-science-header {
+    margin: 30px 0 25px 0;
+    padding-left: 30px;
+}
+
+.science-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0b4a6f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    background: linear-gradient(135deg, #0b4a6f, #1e87f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.science-line {
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, #1e87f0, #7fc9e8);
+    border-radius: 4px;
+}
+
+/* Адаптивность */
+@media (max-width: 960px) {
+    .uk-width-3-4\@m {
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .program-main-title {
+        font-size: 36px;
+    }
+    
+    .timeline-item {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .program-section {
+        padding: 40px 0 60px 0;
+    }
+    
+    .program-main-title {
+        font-size: 28px;
+    }
+    
+    .timeline-time {
+        font-size: 18px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-title {
+        font-size: 20px;
+    }
+    
+    .science-title {
+        font-size: 24px;
+    }
+}

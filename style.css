@@ -16,16 +16,16 @@ html {
     padding-top: 60px;
 }
 
-/* Шапка - прозрачная */
+
 .uk-section-default {
     width: 90%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 100px;
-    padding: 0 40px;  /* убрал вертикальные отступы */
-    height: 80px;  /* фиксированная высота шапки */
+    padding: 0 40px; 
+    height: 80px; 
     display: flex;
-    align-items: center;  /* всё по центру по вертикали */
+    align-items: center;  
 }
 
 /* Навбар */
@@ -34,14 +34,14 @@ html {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100%;  /* на всю высоту шапки */
+    height: 100%; 
 }
 
 /* Логотип */
 .uk-logo {
     display: flex;
     align-items: center;
-    height: 100%;  /* на всю высоту */
+    height: 100%; 
 }
 
 .uk-logo img {
@@ -54,7 +54,7 @@ html {
 .uk-navbar-center {
     display: flex;
     align-items: center;
-    height: 100%;  /* на всю высоту */
+    height: 100%;  
 }
 
 .uk-navbar-nav {
@@ -64,14 +64,14 @@ html {
     padding: 0;
     gap: 10px;
     align-items: center;
-    height: 100%;  /* на всю высоту */
+    height: 100%;  
 }
 
 /* Пункты меню */
 .uk-navbar-nav li {
     display: flex;
     align-items: center;
-    height: 100%;  /* на всю высоту */
+    height: 100%;  
 }
 
 /* Текст кнопок */
@@ -80,14 +80,14 @@ html {
     color: #333;
     font-size: 16px;
     background: transparent;
-    padding: 0 16px;  /* убрал вертикальные паддинги */
+    padding: 0 16px;  
     display: flex;
     align-items: center;
     white-space: nowrap;
     transition: color 0.2s ease;
     font-weight: 400;
-    height: 100%;  /* на всю высоту */
-    line-height: normal;  /* убираем лишнее */
+    height: 100%; 
+    line-height: normal;  
 }
 
 /* При наведении */
@@ -96,7 +96,7 @@ html {
     background: transparent;
 }
 
-/* Убираем всё лишнее */
+
 .uk-margin {
     margin: 0 !important;
 }
@@ -163,20 +163,20 @@ text-shadow:
 }
 /* Лектор */
 .lector-premium-container {
-    max-width: 1250px; /* Было 1100px — теперь карточка шире */
+    max-width: 1250px; 
     margin: 80px auto;
     background: #fff;
-    padding: 50px; /* Чуть больше внутренних отступов */
+    padding: 50px; 
 }
 
 .lector-flex {
     display: flex;
     align-items: center;
-    gap: 70px; /* Увеличил зазор между фото и текстом */
+    gap: 70px; 
 }
 
 .lector-image-side {
-    flex: 0 0 480px; /* Было 400px — фото стало заметно крупнее */
+    flex: 0 0 480px; 
 }
 
 .image-frame {
@@ -184,7 +184,7 @@ text-shadow:
     padding-left: 25px;
 }
 
-/* Декоративный уголок за фото — тоже подрос */
+
 .image-frame::before {
     content: '';
     position: absolute;
@@ -199,25 +199,13 @@ text-shadow:
 
 .image-frame img {
     width: 100%;
-    border-radius: 0 50px 0 50px; /* Скругление чуть сильнее для масштаба */
+    border-radius: 0 50px 0 50px; 
     position: relative;
     z-index: 1;
     box-shadow: 25px 25px 50px rgba(0,0,0,0.1);
 }
 
-.accent-badge {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background: #ee746b;
-    color: #fff;
-    padding: 12px 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 14px; /* Текст на плашке чуть крупнее */
-    letter-spacing: 1px;
-    z-index: 2;
-}
+/*Лектор*/
 
 .lector-info-side {
     flex: 1;
@@ -234,7 +222,7 @@ text-shadow:
 }
 
 .lector-name {
-    font-size: 48px; /* Было 42px — имя теперь звучит громче */
+    font-size: 48px; 
     font-weight: 800;
     color: #333;
     margin: 0 0 30px 0;
@@ -242,7 +230,7 @@ text-shadow:
 }
 
 .lector-bio p {
-    font-size: 21px; /* Было 19px — текст стал читабельнее */
+    font-size: 21px; 
     color: #444;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -250,13 +238,12 @@ text-shadow:
 }
 
 .sub-bio {
-    font-size: 18px !important; /* Было 16px */
+    font-size: 18px !important; 
     color: #777 !important;
     border-left: 4px solid #eee;
     padding-left: 25px;
 }
 /* Лектор */
-/*Аккордион*/
 /* Основные стили */
 .main-content {
     padding: 60px 0;
@@ -269,7 +256,7 @@ text-shadow:
     padding: 0 20px;
 }
 
-/* Карточка с датой и местом */
+
 .event-info-card {
     background: white;
     border-radius: 30px;
@@ -526,7 +513,7 @@ text-shadow:
     margin-bottom: 30px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
     border: 1px solid #f0f0f0;
-    border-right: 4px solid #ee746b;  /* правая граница для разнообразия */
+    border-right: 4px solid #ee746b;  
 }
 
 .price-card-title {
@@ -578,7 +565,6 @@ text-shadow:
     letter-spacing: 1px;
 }
 /*Программа*/
-/* --- Секция Программа (Таймлайн) --- */
 .prog-timeline-section {
     padding: 80px 0;
     background: #ffffff;
@@ -616,7 +602,7 @@ text-shadow:
     margin: 0;
 }
 
-/* Линия таймлайна */
+
 .timeline {
     position: relative;
     border-left: 2px solid #f0f0f0;
@@ -630,10 +616,10 @@ text-shadow:
     padding-left: 40px;
 }
 
-/* Точки на линии */
+
 .timeline-dot {
     position: absolute;
-    left: -10px; /* Центрирование по линии */
+    left: -10px; 
     top: 5px;
     width: 18px;
     height: 18px;
@@ -707,12 +693,12 @@ text-shadow:
     color: #333;
 }
 .my-toptop-right{
-    position: fixed; /* Кнопка "отлипает" от страницы и прилипает к экрану */
-    bottom: 30px;    /* Отступ снизу */
-    right: 30px;      /* Вот здесь мы переносим её налево */
-    z-index: 999;    /* Чтобы кнопка всегда была поверх других блоков */
+    position: fixed; 
+    bottom: 30px;    
+    right: 30px;      
+    z-index: 999;    
     
-    /* Дополнительно: сделаем её поярче, если нужно */
+   
     background:#ee746b ;
     padding: 10px;
     border-radius: 50%;
@@ -720,7 +706,7 @@ text-shadow:
     color: #fff;
 }  
 .divider-wrapper {
-    max-width: 800px; /* Линия не должна быть на весь экран, так изящнее */
+    max-width: 800px; 
     margin: 60px auto;
     padding: 0 20px;
 }
@@ -728,7 +714,6 @@ text-shadow:
 .coral-line {
     border: 0;
     height: 1px;
-    /* Линия плавно проявляется из прозрачного в коралловый и обратно */
     background-image: linear-gradient(to right, rgba(238,116,107,0), rgba(238,116,107,1), rgba(238,116,107,0));
     position: relative;
     overflow: visible;
